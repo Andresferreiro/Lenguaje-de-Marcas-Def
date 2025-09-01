@@ -6,17 +6,17 @@
     --fondo-3: #4f7bf3;
     --color-letra: #070a07;
     --borde: #fffcfc 1px solid;
-    --letra-titulos: oswald;
-    --letra-texto: quicksand;
+    --letra-titulos: Poppins;
+    --letra-texto: PTSerif;
 }
 /* Fuentes */
 @font-face {
-    font-family: "oswald";
-    src: url(/fuentes/Oswald/Oswald-Regular.ttf);
+    font-family: "Poppins";
+    src: url(/fuentes/Poppins/Poppins-Regular.ttf);
 }
 @font-face {
-    font-family: "quicksand";
-    src: url(/fuentes/Quicksand/Quicksand-Regular.ttf);
+    font-family: "PTSerif";
+    src: url(/fuentes/PTSerif/PTSerif-Regular.ttf);
 }
 /* Aqui reseteo los margenes y los paddings */
 
@@ -169,8 +169,8 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 4rem;
-    margin: 4rem;
+    gap: 2rem;
+    margin: 8rem;
 }
 
 /* proyecto2 */
