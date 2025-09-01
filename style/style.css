@@ -1,0 +1,806 @@
+
+
+:root {
+    --fondo-1: #05d9f5;
+    --fondo-2: #2587a5;
+    --fondo-3: #4f7bf3;
+    --color-letra: #070a07;
+    --borde: #fffcfc 1px solid;
+    --letra-titulos: oswald;
+    --letra-texto: quicksand;
+}
+/* Fuentes */
+@font-face {
+    font-family: "oswald";
+    src: url(/fuentes/Oswald/Oswald-Regular.ttf);
+}
+@font-face {
+    font-family: "quicksand";
+    src: url(/fuentes/Quicksand/Quicksand-Regular.ttf);
+}
+/* Aqui reseteo los margenes y los paddings */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* con esto seteamos el color de fondo previamente creado en root */
+body {
+    background-color: var(--fondo-1);
+}
+
+/* configuracion del menu */
+
+.nav_principal {
+    height: 4rem;
+    background-color: var(--fondo-3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    align-items: center;      
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+nav img {
+    padding: 0.5rem;
+}
+
+.item_menu {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.item_menu a {
+    color: var(--color-letra);
+    font-family: var(--letra-titulos);
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.item_menu a:hover {
+    color: rgb(8, 235, 243);
+    font-size: 22px;
+}
+
+.logo {
+    height: 3rem;
+    width: 3rem;
+}
+
+/* Configuracion de secciones */
+
+section {
+    background-color: var(--fondo-2);
+    margin: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 10px;
+    align-items: center;
+    padding: 2px;
+}
+
+/* Seccion Inicio */
+
+.inicio {
+    margin-top: 6rem;
+}
+
+.inicio .texto {
+    grid-column: 1 / 2;
+    margin-left: 2.5rem;
+}
+
+.inicio .texto h1 {
+    font-size: 5rem;
+    font-family: var(--letra-titulos);
+    margin-bottom: 2rem;
+}
+
+.inicio .texto p {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-family: var(--letra-texto);
+}
+
+.inicio .img_inicio {
+    grid-column: 2 / 3;
+}
+
+.inicio .img_inicio img {
+    width: 90%;
+    height: auto;
+    margin: 1rem;
+    align-items: center;
+}
+
+/* Primer proyecto */
+
+.proyecto1 .img1 {
+    grid-column: 1 / 2;
+}
+
+.proyecto1 .texto h1 {
+    font-size: 5rem;
+    font-family: var(--letra-titulos);
+    margin-bottom: 2rem;
+}
+
+.proyecto1 .texto p {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-family: var(--letra-texto);
+}
+
+.proyecto1 .texto {
+    grid-column: 2 / 3;
+    margin: 2.5rem;
+}
+
+.proyecto1 .img1 img {
+    width: 90%;
+    height: auto;
+    margin: 1rem;
+    align-items: center;
+}
+
+.proyecto1 .img2 img {
+    width: 90%;
+    height: auto;
+    margin: 1rem;
+    align-items: center;
+}
+
+.proyecto1 .img2 {
+    display: none;
+}
+
+/* prupo de apartados */
+
+.grupo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4rem;
+    margin: 4rem;
+}
+
+/* proyecto2 */
+
+.proyecto2 {
+    width: 45%;
+    margin: 0rem;
+}
+
+.proyecto2 h1 {
+    font-size: 5rem;
+    font-family: var(--letra-titulos);
+    margin: 2rem;
+    grid-column: 1 / 3;
+}
+
+.proyecto2 p {
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--letra-texto);
+    grid-column: 1 / 3;
+}
+
+.proyecto2 img {
+    width: 90%;
+    height: auto;
+    margin: 1rem;
+    align-items: center;
+    grid-column: 1 / 3;
+}
+
+/* proyecto3 */
+.proyecto3 {
+    width: 45%;
+    margin: 0rem;
+}
+
+.proyecto3 h1 {
+    font-size: 5rem;
+    font-family: var(--letra-titulos);
+    margin: 2rem;
+    grid-column: 1 / 3;
+}
+
+.proyecto3 p {
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--letra-texto);
+    grid-column: 1 / 3;
+}
+
+.proyecto3 img {
+    width: 90%;
+    height: auto;
+    margin: 1rem;
+    align-items: center;
+    grid-column: 1 / 3;
+}
+
+/* Curriculum */
+
+.curriculum {
+    width: 45%;
+    margin: 0rem;
+}
+
+.curriculum h1 {
+    font-size: 5rem;
+    font-family: var(--letra-titulos);
+    margin: 2rem;
+    grid-column: 1 / 3;
+}
+
+.curriculum p {
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--letra-texto);
+}
+
+.curriculum .texto1 {
+    grid-column: 1 / 3;
+}
+
+.curriculum .texto2 {
+    grid-column: 1 / 2;
+}
+
+.curriculum img {
+    width: 300px;
+    height: auto;
+    margin: 1rem;
+    align-items: center;
+    grid-column: 2 / 3;
+}
+
+/* Contactame */
+
+.contactame {
+    width: 45%;
+    margin: 0rem;
+}
+
+.contactame h1 {
+    font-size: 5rem;
+    font-family: var(--letra-titulos);
+    margin: 2rem;
+    grid-column: 1 / 3;
+}
+
+form {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contactame .nombre-correo {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--letra-texto);
+}
+
+.contactame .telefono {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--letra-texto);
+}
+
+.contactame .mensaje {
+    width: 200px;
+    height: auto;
+    margin: 1rem;
+    align-items: center;
+    grid-column: 1 / 3;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--letra-texto);
+}
+
+textarea {
+    font-family: var(--letra-texto);
+    font-size: 18px;
+    width: auto;
+}
+
+input {
+    font-family: var(--letra-texto);
+    font-size: 18px;
+}
+
+.boton-enviar {
+    background-color: var(--fondo-3);
+    font-family: var(--letra-titulos);
+    font-size: 20px;
+    padding: 0.2rem;
+    margin-top: 0.3rem;
+    transition: 0.3s;
+    color: var(--color-letra);
+}
+
+.boton-enviar:hover {
+    color: rgb(2, 199, 248);
+    font-size: 20.5px;
+}
+
+/* Apartado de gustos */
+
+.gustos .img1 {
+    grid-column: 1 / 2;
+}
+
+.gustos .texto h1 {
+    font-size: 5rem;
+    font-family: var(--letra-titulos);
+    margin-bottom: 2rem;
+}
+
+.gustos .texto p {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-family: var(--letra-texto);
+}
+
+.gustos .texto {
+    grid-column: 2 / 3;
+    margin: 2.5rem;
+}
+
+.gustos .img1 img {
+    width: 90%;
+    height: auto;
+    margin: 1rem;
+    align-items: center;
+}
+
+.gustos .img2 img {
+    width: 90%;
+    height: auto;
+    margin: 1rem;
+    align-items: center;
+}
+
+.gustos .img2 {
+    display: none;
+}
+
+/* Foter */
+
+footer {
+    background-color: var(--fondo-3);
+    display: grid;
+    font-size: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer .a {
+    padding-left: 1rem;
+}
+
+footer .b {
+    text-align: center;
+}
+
+footer .c {
+    padding-right: 1rem;
+    text-align: end;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+footer .c:hover {
+    font-size: 22px;
+    color: var(--color-letra);
+}
+
+/* tablet */
+@media screen and (max-width:992px) {
+
+    /* configuracion del menu */
+    .item_menu a {
+        font-size: 1.3rem;
+    }
+
+    /* Seccion de inicio */
+    .inicio .texto h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .inicio .texto p {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+
+    .inicio .texto {
+        grid-column: 1 / 3;
+        margin-left: 0rem;
+    }
+
+    .inicio .img_inicio {
+        grid-column: 1 / 3;
+        display: flex;
+        justify-content: center;
+    }
+
+    .inicio .img_inicio img {
+        width: 75%;
+    }
+
+    /* Primer proyecto */
+
+    .proyecto1 .img1 {
+        display: none;
+    }
+
+    .proyecto1 .texto h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .proyecto1 .texto p {
+        font-size: 1.3rem;
+    }
+
+    .proyecto1 .texto {
+        grid-column: 1 / 3;
+        margin: 2.5rem;
+    }
+
+    .proyecto1 .img img {
+        width: 90%;
+        height: auto;
+        margin: 1rem;
+        align-items: center;
+    }
+
+    .proyecto1 .img2 {
+        grid-column: 1 / 3;
+        display: block;
+    }
+
+    /* prupo de apartados */
+
+    .grupo {
+        display: grid;
+        grid-column: 1fr;
+    }
+
+    /* proyecto2 */
+
+    .proyecto2 {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .proyecto2 h1 {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .proyecto2 p {
+        font-size: 1.3rem;
+    }
+
+    /* proyecto3 */
+
+    .proyecto3 {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .proyecto3 h1 {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .proyecto3 p {
+        font-size: 1.3rem;
+    }
+
+    /* Curriculum */
+
+    .curriculum {
+        width: 100%;
+    }
+
+    .curriculum h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .curriculum p {
+        font-size: 1.3rem;
+    }
+
+    .curriculum img {
+        width: 150px;
+    }
+
+    /* Contactame */
+
+    .contactame {
+        width: 100%;
+        margin: 0rem;
+    }
+
+    .contactame h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .contactame img {
+        display: none;
+    }
+
+    textarea {
+        font-size: 1.3rem;
+    }
+
+    input {
+        font-size: 1.3rem;
+    }
+
+    /* Apartado de gustos */
+
+    .gustos .img1 {
+        display: none;
+    }
+
+    .gustos .texto h1 {
+        font-size: 4rem;
+    }
+
+    .gustos .texto p {
+        font-size: 1.3rem;
+    }
+
+    .gustos .texto {
+        grid-column: 1 / 3;
+        margin: 2.5rem;
+    }
+
+    .gustos .img2 {
+        grid-column: 1 / 3;
+        display: block;
+    }
+}
+
+/* movil */
+@media screen and (max-width:576px) {
+
+    /* configuracion del menu */
+    .nav_principal{
+        height: 2.2rem;
+    }
+    .item_menu a {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+        margin-left: 0rem;
+    }
+
+    .logo {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    /* Seccion de inicio */
+    .inicio {
+    margin-top: 3rem;
+    }
+    .inicio .texto h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .inicio .texto p {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .inicio .texto {
+        grid-column: 1 / 3;
+        margin-left: 0rem;
+    }
+
+    .inicio .img_inicio {
+        grid-column: 1 / 3;
+        display: flex;
+        justify-content: center;
+    }
+
+    .inicio .img_inicio img {
+        width: 75%;
+    }
+
+    /* Configuracion de secciones */
+
+    section {
+        margin: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        align-items: center;
+        padding: 2px;
+    }
+
+    /* Primer proyecto */
+
+    .proyecto1 .img1 {
+        display: none;
+    }
+
+    .proyecto1 .texto h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .proyecto1 .texto p {
+        font-size: 1rem;
+    }
+
+    .proyecto1 .texto {
+        grid-column: 1 / 3;
+        margin: 2.5rem;
+    }
+
+    .proyecto1 .img img {
+        width: 90%;
+        height: auto;
+        margin: 1rem;
+        align-items: center;
+    }
+
+    .proyecto1 .img2 {
+        grid-column: 1 / 3;
+        display: block;
+    }
+
+    /* prupo de apartados */
+
+    .grupo {
+        margin-bottom: 1rem;
+        gap: 1rem;
+        display: block;
+        margin: 1rem;
+    }
+
+    /* proyecto2 */
+
+    .proyecto2 {
+        width: 100%;
+        margin: 0rem;
+        margin-top: 1rem;
+    }
+
+    .proyecto2 h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .proyecto2 p {
+        font-size: 1rem;
+    }
+
+    /* proyecto3 */
+
+    .proyecto3 {
+        width: 100%;
+        margin: 0rem;
+        margin-top: 1rem;
+    }
+
+    .proyecto3 h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .proyecto3 p {
+        font-size: 1rem;
+    }
+
+    /* Curriculum */
+
+    .curriculum {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .curriculum h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .curriculum p {
+        font-size: 1rem;
+    }
+
+    .curriculum img {
+        display: none;
+    }
+
+    /* Contactame */
+
+    .contactame {
+        width: 100%;
+        margin: 0rem;
+        margin-top: 1rem;
+    }
+
+    .contactame h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .contactame img {
+        display: none;
+    }
+
+    textarea {
+        font-size: 1rem;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    /* Apartado de gustos */
+
+    .gustos .img1 {
+        display: none;
+    }
+
+    .gustos .texto h1 {
+        font-size: 3rem;
+    }
+
+    .gustos .texto p {
+        font-size: 1rem;
+    }
+
+    .gustos .texto {
+        grid-column: 1 / 3;
+        margin: 2.5rem;
+    }
+
+    .gustos .img2 {
+        grid-column: 1 / 3;
+        display: block;
+    }
+    /* Foter */
+    footer .a, .b, .c{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .curriculum img {
+        width: 150px;
+    }
+
+    .contactame img {
+        height: 100px;
+    }
+}
